@@ -46,7 +46,7 @@ const Instructions = ({ onNext }) => {
 
             <p style={{ textAlign: "left", fontSize: "16px" }}>
                 <strong>Time Commitment:</strong><br />
-                The total time for the survey is approximately <b>50-60 minutes</b>. Please take your time to answer each section thoughtfully.
+                The total time for the survey is approximately <b>40-45 minutes</b>. Please take your time to answer each section thoughtfully.
             </p>
 
             <div style={{ textAlign: "center" }}>

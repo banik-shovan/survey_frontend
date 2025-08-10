@@ -74,7 +74,7 @@ const ConsentForm = ({ onConsent }) => {
 
                     </li>
                     <li>
-                        One session of the online study will last ca. 60 minutes
+                        One session of the online study will last ca. 40 to 45 minutes
                     </li>
                     <li>
                         As compensation for your participation, you will receive one credit point for the lecture

@@ -8,6 +8,9 @@ const getAllApiKeys = () => [
     process.env.REACT_APP_OPENAI_API_KEY3,
     process.env.REACT_APP_OPENAI_API_KEY4,
     process.env.REACT_APP_OPENAI_API_KEY5,
+    process.env.REACT_APP_OPENAI_API_KEY6,
+    process.env.REACT_APP_OPENAI_API_KEY7,
+    process.env.REACT_APP_OPENAI_API_KEY8,
 ];
 
 
