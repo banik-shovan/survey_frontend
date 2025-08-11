@@ -15,6 +15,11 @@ const getAllApiKeys = () => [
     process.env.REACT_APP_OPENAI_API_KEY10,
     process.env.REACT_APP_OPENAI_API_KEY11,
     process.env.REACT_APP_OPENAI_API_KEY12,
+    process.env.REACT_APP_OPENAI_API_KEY13, //paid Api
+    process.env.REACT_APP_OPENAI_API_KEY14,
+    process.env.REACT_APP_OPENAI_API_KEY15,
+    process.env.REACT_APP_OPENAI_API_KEY16,
+    process.env.REACT_APP_OPENAI_API_KEY17,
 ];
 
 
