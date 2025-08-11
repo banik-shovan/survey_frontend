@@ -43,7 +43,22 @@ const Instructions = ({ onNext }) => {
                 <br />  - How helpful the suggestions in Assisted Prompting were.
                 <br /> - Any additional thoughts or comments you may have.
             </p>
+            <p>
+                <strong>Example Task</strong>
+                <p>
+                    Scenario:<br />
+                    <b >
+                        You want to quickly check if three given lengths can form a triangle. If they can, you also want to know the perimeter. If they can't, you just want an error message.
+                    </b>
+                </p>
 
+                <p>
+                    User Prompt:<br />
+                    <b>
+                        Make a program that asks for 3 side lengths. If they form a triangle, show the perimeter. If not,show an error.
+                    </b>
+                </p>
+            </p>
             <p style={{ textAlign: "left", fontSize: "16px" }}>
                 <strong>Time Commitment:</strong><br />
                 The total time for the survey is approximately <b>40-45 minutes</b>. Please take your time to answer each section thoughtfully.

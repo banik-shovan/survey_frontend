@@ -43,7 +43,7 @@ const ConsentForm = ({ onConsent }) => {
 
             // Store in localStorage
             // localStorage.setItem("userId", id);
-            Cookies.set('userId', id, { expires: 1 / 24 });  // expires in 1 hour
+            Cookies.set('userId', id, { expires: 1 / 12 });  // expires in 1 hour
 
 
             alert("Consent submitted successfully.");

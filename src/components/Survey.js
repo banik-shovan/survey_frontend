@@ -65,11 +65,11 @@ function balancedLatinSquare(array, participantId) {
 
 const Survey = ({ onComplete }) => {
     const scenarios = [
-        { title: "Marketing Strategy Scenario:", paragraph: "You need to create a marketing strategy for a new tech product targeted at university students. Based on this scenario, write a clear and detailed prompt that you could give to an AI or assistant to help you design the marketing plan. Your prompt should include the product's key features, target market, possible advertising channels (like social media, campus events, and digital ads), budget considerations, and how to measure campaign success." },
-        { title: "Product Invention Scenario:", paragraph: "You need to invent a product that addresses a common problem people face in daily life. Based on this scenario, write a prompt that you could give to an AI or assistant to help you develop the idea. Your prompt should describe the problem, target audience, product features, how it’s different from existing solutions, and ideas for marketing and distribution." },
-        { title: "Eassay on Social Issue Scenario:", paragraph: "You need to write a persuasive essay on a social issue such as universal basic income (UBI). Based on this scenario, create a prompt you could give to an AI or assistant to help you draft the essay. Your prompt should specify the stance you want to take, the need for reasoning and evidence, and a balanced discussion of pros and cons." },
-        { title: "Problem Solving Scenario:", paragraph: "A cafe wants a program that can quickly calculate the total cost of a customer’s order, including tax. Based on this scenario, write a prompt that could be given to a coding assistant or AI tool to get help building the program." },
-        { title: "Mathmatical Scenario:", paragraph: "You need to design 2 real-life math problems involving percentages and discounts for a shopping context. Based on this scenario, write a prompt you could give to an AI or assistant to help generate these problems. Your prompt should mention the price ranges, percentage values, and whether solutions should be shown." },
+        { title: "Marketing Strategy Scenario:", paragraph: "<p style='color:blue;'>You need to create a marketing strategy for a new tech product targeted at university students.</p> <p><b>Based on this scenario, write a clear and detailed prompt that you could give to an AI or assistant to help you design the marketing plan.Your prompt should include the product's key features, target market, possible advertising channels (like social media, campus events, and digital ads), budget considerations, and how to measure campaign success.</b></p>" },
+        { title: "Product Invention Scenario:", paragraph: "<p style='color:blue;'>You need to invent a product that addresses a common problem people face in daily life.</p> <p><b>Based on this scenario, write a prompt that you could give to an AI or assistant to help you develop the idea. Your prompt should describe the problem, target audience, product features, how it’s different from existing solutions, and ideas for marketing and distribution.</b></p>" },
+        { title: "Eassay on Social Issue Scenario:", paragraph: "<p style='color:blue;'>You need to write a persuasive essay on a social issue such as universal basic income (UBI).</p> <p><b>Based on this scenario, create a prompt you could give to an AI or assistant to help you draft the essay.Your prompt should specify the stance you want to take, the need for reasoning and evidence, and a balanced discussion of pros and cons.</b></p>" },
+        { title: "Problem Solving Scenario:", paragraph: "<p style='color:blue;'>A cafe wants a program that can quickly calculate the total cost of a customer’s order, including tax.</p> <p><b>Based on this scenario, write a prompt that could be given to a coding assistant or AI tool to get help building the program.</b></p>" },
+        { title: "Mathmatical Scenario:", paragraph: "<p style='color:blue;'>You need to design 2 real-life math problems involving percentages and discounts for a shopping context.</p> <p><b>Based on this scenario, write a prompt you could give to an AI or assistant to help generate these problems.Your prompt should mention the price ranges, percentage values, and whether solutions should be shown.</b></p>" },
     ];
 
     const conditions = ["Free", "Assisted"];
@@ -416,13 +416,17 @@ User Question: ${userQuestion}
 
             <h2>{randomizedScenarios[currentScenario]?.promptingType} Prompting</h2>
             <h3>{randomizedScenarios[currentScenario]?.title}</h3>
-            <p>{randomizedScenarios[currentScenario]?.paragraph}</p>
+            <div dangerouslySetInnerHTML={{ __html: randomizedScenarios[currentScenario]?.paragraph }} >
+
+
+            </div>
 
             <textarea
                 value={userQuestion}
                 onChange={(e) => setUserQuestion(e.target.value)}
                 disabled={isSubmittingQuestion || questionSubmitted}
                 rows={4} // you can adjust how tall it starts
+                placeholder="Write your prompt here to get the response from ChatGPT 4.0 "
                 style={{
                     width: "100%",
                     padding: "10px",
@@ -462,6 +466,7 @@ User Question: ${userQuestion}
                                 {assistantQuestions.split("\n").map((q, i) => q.trim() && <li key={i}>{q.trim()}</li>)}
                             </ul>
                             <textarea
+                                placeholder="Put your assisted feedback from the questions above to get the final response ."
                                 value={feedback}
                                 onChange={(e) => setFeedback(e.target.value)}
                                 disabled={isSubmittingFeedback || isFeedbackSubmitted}
