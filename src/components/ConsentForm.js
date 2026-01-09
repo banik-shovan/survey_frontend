@@ -65,8 +65,8 @@ const ConsentForm = ({ onConsent }) => {
                 You are invited to participate in the online study&nbsp;
                 <b>"Prompting Without Feedback: A Summative Study of Free vs. Assisted Prompt Revision Across Open-ended LLM Tasks"</b>.
                 The study is conducted by&nbsp;
-                <b>Abu Sayeed Bin Mozahid</b>, <b>Shimul Paul</b>, <b>Shovan Banik</b>,<b> Farjatun Nessa </b>, and&nbsp;
-                <b>Sadia Afrin Tisha </b> and supervised by <b>Prof. Dr. Valentin Schwind </b> from the Frankfurt University of Applied Sciences. The study with estimated 20 participants takes place in the period from <b>2025-08-10 to 2025-08-16</b>. Please note:
+                <b>Abu Sayeed Bin Mozahid</b>, <b>Shimul Paul</b>, <b>Shovan Banik</b>, and&nbsp;<b> Farjatun Nessa </b>
+                from the Frankfurt University of Applied Sciences. The study with estimated 20 participants takes place in the period from <b>2025-08-10 to 2025-08-16</b>. Please note:
                 <ul>
                     <li>Your participation is entirely voluntary and can be discontinued or withdrawn at any time
                     </li>
@@ -86,7 +86,7 @@ const ConsentForm = ({ onConsent }) => {
                         Recordings and personal data are treated with confidentiality and and will fully anonymized stored, evaluated and possibly made publicly available as raw data sets so that no conclusions can be drawn about individual persons anymore
                     </li>
                 </ul>
-                The alternative to participation in this study is to choose not to participate. If you have any questions, concerns, or complaints about the informed consent process of this research study or your rights as a human research subject, please contact <b>Prof. Dr. Valentin Schwind</b>. Please read the following information carefully and take the time you need.
+                
 
             </p>
 
@@ -142,16 +142,10 @@ const ConsentForm = ({ onConsent }) => {
                 <li><strong>Shimul Paul</strong> - <a href="mailto:shimul.paul@stud.fra-uas.de">shimul.paul@stud.fra-uas.de</a></li>
                 <li><strong>Shovan Banik</strong> - <a href="mailto:shovan.banik@stud.fra-uas.de">shovan.banik@stud.fra-uas.de</a></li>
                 <li><strong>Farjatun Nessa</strong> - <a href="mailto:farjatun.nessa@stud.fra-uas.de">farjatun.nessa@stud.fra-uas.de</a></li>
-                <li><strong>Sadia Afrin Tisha</strong> - <a href="mailto:sadia.tisha@stud.fra-uas.de">sadia.tisha@stud.fra-uas.de</a></li>
+
             </ul>
 
-            <h3>Principal Investigator</h3>
-            <p>
-                <strong>Prof. Dr. Valentin Schwind</strong><br />
-                Email: <a href="mailto:valentin.schwind@fb2.fra-uas.de">valentin.schwind@fb2.fra-uas.de</a><br />
-                Frankfurt University of Applied Sciences<br />
-                Nibelungenplatz 1, 60318 Frankfurt am Main, Germany
-            </p>
+
 
             <h3>Consent Confirmation</h3>
             <p>Please confirm your agreement to participate in this study by checking the box below and providing your signature (full name) and email below.</p>
